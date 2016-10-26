@@ -21,7 +21,6 @@ describe("Thermostat", function () {
     });
 
     it("raises an error if temperature is increases above maximum in power saving mode", function () {
-      thermostat.powerSaving = true;
       thermostat._temperature = 25;
       expect(function () {
         thermostat.temperatureUp()}).toThrow("Maximum temperature reached");
@@ -54,21 +53,6 @@ describe("Thermostat", function () {
       expect(function () {
         thermostat.temperatureDown()}).toThrow("Minimum temperature reached");
       expect(thermostat._currentTemperature()).not.toBe(9);
-    });
-
-  });
-
-  describe("Power saving mode", function () {
-
-    it("Can turn power saving mode on", function () {
-      thermostat.powerSaving = false;
-      thermostat.powerSavingOn();
-      expect(thermostat._isPowerSaving()).toBeTruthy();
-    });
-
-    it("Can turn power saving mode off", function () {
-      thermostat.powerSavingOff();
-      expect(thermostat._isPowerSaving()).toBeFalsy();
     });
 
   });

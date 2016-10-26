@@ -12,14 +12,14 @@ Thermostat.prototype.temperatureUp = function () {
   if (this._currentTemperature() === this._currentMaxTemperature()) {
     throw "Maximum temperature reached";
   }
-  this._temperature += 1;
+  this._temperature++;
 };
 
 Thermostat.prototype.temperatureDown = function () {
   if (this._currentTemperature() === 10) {
     throw "Minimum temperature reached";
   }
-  this._temperature -= 1;
+  this._temperature--;
 };
 
 Thermostat.prototype.powerSavingOn = function () {
