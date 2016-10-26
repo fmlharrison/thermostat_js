@@ -20,6 +20,22 @@ describe("Thermostat", function () {
       expect(thermostat._currentTemperature()).toBe(21);
     });
 
+    it("raises an error if temperature is increases above maximum in power saving mode", function () {
+      thermostat.powerSaving = true;
+      thermostat._temperature = 25;
+      expect(function () {
+        thermostat.temperatureUp()}).toThrow("Maximum temperature reached");
+      expect(thermostat._currentTemperature()).not.toBe(26);
+    });
+
+    it("raises an error if temperature is increases above maximum in normal mode", function () {
+      thermostat._temperature = 32;
+      thermostat.powerSavingOff();
+      expect(function () {
+        thermostat.temperatureUp()}).toThrow("Maximum temperature reached");
+      expect(thermostat._currentTemperature()).not.toBe(33);
+    });
+
   });
 
   describe("Decrease temperature", function () {
@@ -53,7 +69,8 @@ describe("Thermostat", function () {
     it("Can turn power saving mode off", function () {
       thermostat.powerSavingOff();
       expect(thermostat._isPowerSaving()).toBeFalsy();
-    })
+    });
+
   });
 
 });
