@@ -1,8 +1,12 @@
 function Thermostat() {
-  STARTING_TEMPERATURE = 20;
-  this.temperature = STARTING_TEMPERATURE;
+  this.STARTING_TEMPERATURE = 20;
+  this._temperature = this.STARTING_TEMPERATURE;
 };
 
-Thermostat.prototype.currentTemperature = function () {
-  return this.temperature;
+Thermostat.prototype._currentTemperature = function () {
+  return this._temperature;
+};
+
+Thermostat.prototype.temperatureUp = function () {
+  this._temperature += 1;
 };
