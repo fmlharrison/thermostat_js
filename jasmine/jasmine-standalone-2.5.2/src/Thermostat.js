@@ -16,7 +16,7 @@ Thermostat.prototype.temperatureUp = function () {
 };
 
 Thermostat.prototype.temperatureDown = function () {
-  if (this._currentTemperature() === 10) {
+  if (this._currentTemperature() === this.MIN_TEMPERATURE) {
     throw "Minimum temperature reached";
   }
   this._temperature--;
