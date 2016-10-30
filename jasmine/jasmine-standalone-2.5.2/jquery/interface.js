@@ -38,13 +38,13 @@ $("#weather").change(function (e) {
   });
 
   function updateTemperature(){
-    $('#temperature').text(thermostat._currentTemperature()+ "°");
+    $('#temperature').text(thermostat._currentTemperature());
     $('#temperature').attr('class', thermostat.energyUsage());
   };
 
   function ecoColor() {
     if (thermostat._isPowerSaving() == true) {
-      $("#mode").css("color", "limegreen");
+      $("#mode").css("color", "rgb(0, 159, 60)");
     }
     else {
       $("#mode").css("color", "black");

@@ -55,11 +55,20 @@
 
 #weather {
   /*border: 1px solid red;*/
-  width: 100px;
+  width: 180px;
+  height: 25px;
   position: absolute;
   bottom: 8%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+select {
+  font-family: terminator_real_nfiregular;
+  font-size: 12px;
+  background-color: transparent;
+  color: white;
+  outline: none;
 }
 
 .weather_display {
@@ -102,7 +111,6 @@
 #up, #down {
   background-color: transparent;
   outline: none;
-  float: center;
   border: none;
   margin-left: 20px;
   margin-right: 20px;
@@ -112,16 +120,18 @@
   background-color: transparent;
   outline: none;
   border: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #eco img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 #reset img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 #up img {
@@ -139,7 +149,7 @@
 #mode {
   font-family: florals_2regular;
   font-size: 40px;
-  color: limegreen;
+  color: rgb(0, 159, 60);
 }
 
 .temp {
@@ -148,16 +158,16 @@
 }
 
 .Low-usage {
-  color: limegreen;
-  font-size: 70px;
+  color: rgb(0, 159, 60);
+  font-size: 80px;
 }
 
 .Medium-usage {
   color: blue;
-  font-size: 70px;
+  font-size: 80px;
 }
 
 .High-usage {
   color: red;
-  font-size: 70px;
+  font-size: 80px;
 }

@@ -9,6 +9,9 @@ function Thermostat() {
 };
 
 Thermostat.prototype.temperatureUp = function () {
+  if (this._isPowerSaving() === true && this._currentTemperature() > this.POWER_SAVING_MAX_TEMP) {
+    throw "Above Eco mode maximum temperature, please reduce temperature";
+  }
   if (this._currentTemperature() === this._currentMaxTemperature()) {
     throw "Maximum temperature reached";
   }
