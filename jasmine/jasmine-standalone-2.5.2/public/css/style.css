@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'florals_2regular';
+    src: url('florals2-webfont.woff2') format('woff2'),
+         url('florals2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'terminator_real_nfiregular';
+    src: url('terminator_real_nfi-webfont.woff2') format('woff2'),
+         url('terminator_real_nfi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.thermostat {
+  background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -300px;
+  /*border: 1px solid red;*/
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 20px 20px 10px #888888;
+}
+
+.inner_box {
+  /*background: white;*/
+  /*border: 1px solid green;*/
+  background: linear-gradient(to bottom, #383838 0%,#000000 100%);
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+}
+
+.temp_change {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /*border: 1px solid red;*/
+  display: inline-block;
+  height: 60px;
+  width: 250px;
+}
+
+#weather {
+  /*border: 1px solid red;*/
+  width: 100px;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.weather_display {
+  width: 200px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /*border: 1px solid red;*/
+  width: 200px;
+  display: inline-block;
+}
+
+.buttons {
+  /*border: 1px solid red;*/
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.gauge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-family: terminator_real_nfiregular;
+}
+
+.power_saving {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: green;
+}
+
+#up, #down {
+  background-color: transparent;
+  outline: none;
+  float: center;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#up img {
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+}
+
+#down img {
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+}
+
+#mode {
+  font-family: florals_2regular;
+  font-size: 40px;
+}
+
+.temp {
+  font-family: terminator_real_nfiregular;
+  color: blue;
+}
+
+.Low-usage {
+  color: green;
+  font-size: 70px;
+}
+
+.Medium-usage {
+  color: blue;
+  font-size: 70px;
+}
+
+.High-usage {
+  color: red;
+  font-size: 70px;
+}
