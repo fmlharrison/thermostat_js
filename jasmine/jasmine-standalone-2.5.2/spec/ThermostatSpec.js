@@ -29,10 +29,17 @@ describe("Thermostat", function () {
 
     it("raises an error if temperature is increases above maximum in normal mode", function () {
       thermostat._temperature = 32;
-      thermostat.powerSavingOff();
+      thermostat._powerSavingOff();
       expect(function () {
         thermostat.temperatureUp()}).toThrow("Maximum temperature reached");
       expect(thermostat._currentTemperature()).not.toBe(33);
+    });
+
+    it("raises an error when trying to up the temperature when in power saving mode and temperature is already above maximum temperature", function () {
+      thermostat._temperature = 29;
+      thermostat._powerSavingOn;
+      expect(function () {
+        thermostat.temperatureUp()}).toThrow("Above Eco mode maximum temperature, please reduce temperature");
     });
 
   });
