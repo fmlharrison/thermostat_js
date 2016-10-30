@@ -13,18 +13,15 @@ When the thermostat is started it had a default setting of 20 degrees and power-
 
 ![Alt text](./images/thermodefault.png?raw=true "Thermostat1")
 
-The user can increase the temperature by clicking on the up arrow below the temperature display:  
-
+The user can increase the temperature by clicking on the up arrow below the temperature display:
 <img src="http://image.flaticon.com/icons/svg/56/56690.svg" height="50" width="50">  
 
-The user can descrease the temperature by clicking on the down arrow below the temperature display:  
-
+The user can descrease the temperature by clicking on the down arrow below the temperature display:
 <img src="http://s18.postimg.org/nwgb93zc9/down.png" height="50" width="50">  
 
 The thermostat indicates it is in power-saving mode by displaying a green leaf above the temperature. If it is in power-saving mode the user can't raise the temperature above 25 degrees.  
 
-Power-saving mode is switched on and off by clicking the eco button:  
-
+Power-saving mode is switched on and off by clicking the eco button:
 <img src="http://pazvizcainoconsultores.com/wp-content/uploads/icono-bombilla-verde-4.png" height="50" width="50">  
 
 When power-saving mode is off the leaf with be in black.  
@@ -39,8 +36,7 @@ The minimum temperature of the thermostat is 10 degrees. The user is not able to
 
 ![Alt text](./images/thermolowenergy.png?raw=true "Thermostat3")  
 
-The user can reset the thermostat back to its default settings by clicking the reset button:  
-
+The user can reset the thermostat back to its default settings by clicking the reset button:
 <img src="http://www.clipartbest.com/cliparts/7Ta/KLb/7TaKLb6Xc.png" height="50" width="50">  
 
 The user can select from a list of cities to see the local weather conditions and temperature at the bottom of the thermostat.  
@@ -74,5 +70,5 @@ jQuery
 jSON  
 HTML  
 CSS  
-  
+
 Enjoy!
