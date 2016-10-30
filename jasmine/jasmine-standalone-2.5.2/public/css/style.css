@@ -75,6 +75,7 @@
 
 .buttons {
   /*border: 1px solid red;*/
+  width: 250px;
   position: absolute;
   top: 15%;
   left: 50%;
@@ -107,6 +108,22 @@
   margin-right: 20px;
 }
 
+#eco, #reset {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+#eco img {
+  width: 50px;
+  height: 50px;
+}
+
+#reset img {
+  width: 50px;
+  height: 50px;
+}
+
 #up img {
   width: 50px;
   height: 50px;
@@ -122,6 +139,7 @@
 #mode {
   font-family: florals_2regular;
   font-size: 40px;
+  color: limegreen;
 }
 
 .temp {
@@ -130,7 +148,7 @@
 }
 
 .Low-usage {
-  color: green;
+  color: limegreen;
   font-size: 70px;
 }
 

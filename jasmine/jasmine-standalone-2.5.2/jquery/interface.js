@@ -44,10 +44,10 @@ $("#weather").change(function (e) {
 
   function ecoColor() {
     if (thermostat._isPowerSaving() == true) {
-      $("#mode").css("color", "green");
+      $("#mode").css("color", "limegreen");
     }
     else {
-      $("#mode").css("color", "red");
+      $("#mode").css("color", "black");
     }
   };
 });
