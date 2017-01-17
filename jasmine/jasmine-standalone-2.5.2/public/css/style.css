@@ -30,8 +30,6 @@
 }
 
 .inner_box {
-  /*background: white;*/
-  /*border: 1px solid green;*/
   background: linear-gradient(to bottom, #383838 0%,#000000 100%);
   width: 90%;
   height: 90%;
@@ -47,14 +45,12 @@
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  /*border: 1px solid red;*/
   display: inline-block;
   height: 60px;
   width: 250px;
 }
 
 #weather {
-  /*border: 1px solid red;*/
   width: 180px;
   height: 25px;
   position: absolute;
@@ -77,13 +73,11 @@ select {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  /*border: 1px solid red;*/
   width: 200px;
   display: inline-block;
 }
 
 .buttons {
-  /*border: 1px solid red;*/
   width: 250px;
   position: absolute;
   top: 15%;
