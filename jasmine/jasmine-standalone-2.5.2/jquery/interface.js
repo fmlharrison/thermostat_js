@@ -5,9 +5,9 @@ $( document ).ready(function () {
 $("#weather").change(function (e) {
    e.preventDefault();
    var city = $("#weather").val();
-   $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&APPID=121a9ab6b7bae94bcb61113c310c6e21', function (data){
+   $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&APPID=121a9ab6b7bae94bcb61113c310c6e21', function (data){
      $(".city_name").text(data.name);
-     $(".weather_forcast").html("<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png'>");
+     $(".weather_forcast").html("<img src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png'>");
      $(".temp").text(Math.round(data.main.temp) + "°C");
    });
  });
